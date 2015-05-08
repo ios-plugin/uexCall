@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>50CECA93-F0F1-4EDD-89B2-A98759BE777E</string>
+	<key>IDESourceControlProjectName</key>
+	<string>uexCall</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>6BBF59DA-CF2D-45C6-8879-7A8435AD65F2</key>
+		<string>https://192.168.1.38/svn/Plugin3.0_IOS/trunk/code/public/EUExCall</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>code/public/EUExCall/uexCall.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>6BBF59DA-CF2D-45C6-8879-7A8435AD65F2</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>6BBF59DA-CF2D-45C6-8879-7A8435AD65F2</key>
+		<string>https://192.168.1.38/svn/Plugin3.0_IOS</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://192.168.1.38/svn/Plugin3.0_IOS/trunk/code/public/EUExCall/uexCall.xcodeproj</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>6BBF59DA-CF2D-45C6-8879-7A8435AD65F2</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6BBF59DA-CF2D-45C6-8879-7A8435AD65F2</string>
+			<key>IDESourceControlWCCName</key>
+			<string>EUExCall</string>
+		</dict>
+	</array>
+</dict>
+</plist>
