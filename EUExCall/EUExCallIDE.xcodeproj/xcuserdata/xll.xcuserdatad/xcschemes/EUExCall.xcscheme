@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3CAFE33F18C06C30002BF413"
-               BuildableName = "uexCall.dylib"
-               BlueprintName = "uexCall"
-               ReferencedContainer = "container:uexCall.xcodeproj">
+               BlueprintIdentifier = "5AA8D510188F9B9A00C854BC"
+               BuildableName = "libuexCall.a"
+               BlueprintName = "EUExCall"
+               ReferencedContainer = "container:EUExCall.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3CAFE34F18C06C30002BF413"
-               BuildableName = "uexCallTests.xctest"
-               BlueprintName = "uexCallTests"
-               ReferencedContainer = "container:uexCall.xcodeproj">
+               BlueprintIdentifier = "5AA8D520188F9B9A00C854BC"
+               BuildableName = "EUExCallTests.xctest"
+               BlueprintName = "EUExCallTests"
+               ReferencedContainer = "container:EUExCall.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
