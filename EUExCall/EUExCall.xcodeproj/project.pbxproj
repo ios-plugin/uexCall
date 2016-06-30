@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		21D29FBD1D227AF600CA217A /* AppCanKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21D29FBC1D227AF600CA217A /* AppCanKit.framework */; };
 		5AA8D515188F9B9A00C854BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AA8D514188F9B9A00C854BC /* Foundation.framework */; };
 		5AA8D51C188F9B9A00C854BC /* EUExCall.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AA8D51B188F9B9A00C854BC /* EUExCall.m */; };
 /* End PBXBuildFile section */
@@ -24,13 +25,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		21D29FBC1D227AF600CA217A /* AppCanKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppCanKit.framework; sourceTree = "<group>"; };
 		5A60A94718AB2A8600C727A6 /* EUExCall.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EUExCall.h; sourceTree = "<group>"; };
 		5AA8D511188F9B9A00C854BC /* libuexCall.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libuexCall.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AA8D514188F9B9A00C854BC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5AA8D518188F9B9A00C854BC /* EUExCall-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EUExCall-Prefix.pch"; sourceTree = "<group>"; };
 		5AA8D51B188F9B9A00C854BC /* EUExCall.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EUExCall.m; sourceTree = "<group>"; };
 		5AA8D522188F9B9A00C854BC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		5AA8D53B188F9C4000C854BC /* EUExBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUExBase.h; sourceTree = "<group>"; };
 		5AA8D53C188F9C4000C854BC /* EUExBaseDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUExBaseDefine.h; sourceTree = "<group>"; };
 		5AA8D53D188F9C4000C854BC /* EUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUtility.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -40,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21D29FBD1D227AF600CA217A /* AppCanKit.framework in Frameworks */,
 				5AA8D515188F9B9A00C854BC /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -95,7 +97,7 @@
 		5AA8D53A188F9C4000C854BC /* engineHeader */ = {
 			isa = PBXGroup;
 			children = (
-				5AA8D53B188F9C4000C854BC /* EUExBase.h */,
+				21D29FBC1D227AF600CA217A /* AppCanKit.framework */,
 				5AA8D53C188F9C4000C854BC /* EUExBaseDefine.h */,
 				5AA8D53D188F9C4000C854BC /* EUtility.h */,
 			);
@@ -240,6 +242,10 @@
 				CLANG_ENABLE_OBJC_ARC = NO;
 				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/uexCall/";
 				DSTROOT = /tmp/EUExCall.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/EUExCall/engineHeader",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EUExCall/EUExCall-Prefix.pch";
 				ONLY_ACTIVE_ARCH = NO;
@@ -258,6 +264,10 @@
 				CLANG_ENABLE_OBJC_ARC = NO;
 				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/uexCall/";
 				DSTROOT = /tmp/EUExCall.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/EUExCall/engineHeader",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EUExCall/EUExCall-Prefix.pch";
 				ONLY_ACTIVE_ARCH = NO;
