@@ -3,6 +3,6 @@
     <plugin name="uexCall">
         <method name="call"></method>
 		<method name="dial"></method>
-        <method name="faceTime"></method>
+        <method name="facetime"></method>
 	</plugin>
 </uexplugins>
