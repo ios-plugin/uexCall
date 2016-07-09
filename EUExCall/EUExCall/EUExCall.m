@@ -59,7 +59,7 @@
 	[callWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"tel://%@",phoneNum]]]];
 }
 
--(void)facetime:(NSMutableArray *)inArguments {
+-(void)faceTime:(NSMutableArray *)inArguments {
 	NSString * faceTimeNum = [inArguments objectAtIndex:0];
 	NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"facetime://%@",faceTimeNum]];
 	if ([[UIApplication sharedApplication] canOpenURL:url]) {
