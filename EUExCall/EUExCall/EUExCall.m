@@ -13,25 +13,13 @@
 @implementation EUExCall
 @synthesize phoneNumber;
 
-//-(id)initWithBrwView:(EBrowserView *) eInBrwView {	
-//	if (self = [super initWithBrwView:eInBrwView]) {
-//	}
-//	return self;
-//}
 
 -(void)dealloc {
-	[callWebView release];
 	callWebView = nil;
-	[phoneNumber release];
 	phoneNumber = nil;
-	[super dealloc];
+	
 }
 
-//-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
-//	if (buttonIndex == 1) {
-//		[[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"tel://%@",phoneNumber]]];
-//	} 
-//}
 
 -(void)call:(NSMutableArray *)inArguments {
 	NSString * phoneNum = [inArguments objectAtIndex:0];
@@ -42,11 +30,7 @@
 	}
 	self.phoneNumber = [NSString stringWithString:phoneNum];
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"tel://%@",phoneNumber]]];
-    
-//	UIAlertView * smsAlert = [[UIAlertView alloc] initWithTitle:@"提示" message:@"应用程序需要拨打电话,是否确定拨号?" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定",nil];
-//	[smsAlert show];
-//	[smsAlert release];
-//	smsAlert = nil;
+
 }
 
 -(void)dial:(NSMutableArray *)inArguments {
