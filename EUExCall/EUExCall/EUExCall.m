@@ -13,11 +13,11 @@
 @implementation EUExCall
 @synthesize phoneNumber;
 
--(id)initWithBrwView:(EBrowserView *) eInBrwView {	
-	if (self = [super initWithBrwView:eInBrwView]) {
-	}
-	return self;
-}
+//-(id)initWithBrwView:(EBrowserView *) eInBrwView {	
+//	if (self = [super initWithBrwView:eInBrwView]) {
+//	}
+//	return self;
+//}
 
 -(void)dealloc {
 	[callWebView release];
@@ -37,7 +37,7 @@
 	NSString * phoneNum = [inArguments objectAtIndex:0];
 	//直接拨打电话	
 	if (phoneNum == nil) {
-		[super jsFailedWithOpId:0 errorCode:1020101 errorDes:UEX_ERROR_DESCRIBE_ARGS];
+		//[super jsFailedWithOpId:0 errorCode:1020101 errorDes:UEX_ERROR_DESCRIBE_ARGS];
 		return;
 	}
 	self.phoneNumber = [NSString stringWithString:phoneNum];
@@ -53,13 +53,13 @@
 	NSString * phoneNum = [inArguments objectAtIndex:0];
 	//跳转到打电话界面
 	if (phoneNum == nil) {
-		[super jsFailedWithOpId:0 errorCode:1020201 errorDes:UEX_ERROR_DESCRIBE_ARGS];
+		//[super jsFailedWithOpId:0 errorCode:1020201 errorDes:UEX_ERROR_DESCRIBE_ARGS];
 	}
 	callWebView = [[UIWebView alloc] initWithFrame:CGRectZero];
 	[callWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"tel://%@",phoneNum]]]];
 }
 
--(void)facetime:(NSMutableArray *)inArguments {
+-(void)facetime:(NSMutableArray *)inArguments{
 	NSString * faceTimeNum = [inArguments objectAtIndex:0];
 	NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"facetime://%@",faceTimeNum]];
 	if ([[UIApplication sharedApplication] canOpenURL:url]) {
